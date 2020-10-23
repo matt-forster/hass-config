@@ -1,0 +1,58 @@
+- platform: template
+  sensors:
+    living_room_motion:
+      friendly_name: 'Living Room Motion'
+      device_class: motion
+      value_template: >
+        {% set sensors = [states.binary_sensor.multi1_motion] %}
+        {{ sensors | selectattr('state','eq','on') | list | count > 0 }}
+
+- platform: template
+  sensors:
+    living_room_auxillary_motion:
+      friendly_name: 'Living Room Auxillary Motion'
+      device_class: motion
+      value_template: >
+        {% set sensors = [states.binary_sensor.multi1_motion,
+                          states.binary_sensor.front_door_keypad_motion,
+                          states.binary_sensor.thermostat] %}
+        {{ sensors | selectattr('state','eq','on') | list | count > 0 }}
+
+- platform: template
+  sensors:
+    kitchen_motion:
+      friendly_name: 'Kitchen Motion'
+      device_class: motion
+      value_template: >
+        {% set sensors = [states.binary_sensor.motion] %}
+        {{ sensors | selectattr('state','eq','on') | list | count > 0 }}
+
+- platform: template
+  sensors:
+    kitchen_auxillary_motion:
+      friendly_name: 'Kitchen Auxillary Motion'
+      device_class: motion
+      value_template: >
+        {% set sensors = [states.binary_sensor.motion,
+                          states.binary_sensor.thermostat,
+                          states.binary_sensor.back_door_motion,
+                          states.binary_sensor.back_door_keypad_motion] %}
+        {{ sensors | selectattr('state','eq','on') | list | count > 0 }}
+
+- platform: template
+  sensors:
+    office_motion:
+      friendly_name: 'Office Motion'
+      device_class: motion
+      value_template: >
+        {% set sensors = [states.binary_sensor.office_multi] %}
+        {{ sensors | selectattr('state','eq','on') | list | count > 0 }}
+
+- platform: template
+  sensors:
+    bedroom_motion:
+      friendly_name: 'Bedroom Motion'
+      device_class: motion
+      value_template: >
+        {% set sensors = [states.binary_sensor.bedroom] %}
+        {{ sensors | selectattr('state','eq','on') | list | count > 0 }}

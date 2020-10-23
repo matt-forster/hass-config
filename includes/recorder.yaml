@@ -1,0 +1,27 @@
+purge_keep_days: 7
+purge_interval: 3
+include:
+  entities:
+    - alarm_control_panel.abode_alarm
+    - sensor.last_boot
+
+    - sensor.office_multi_lux
+    - sensor.multi1_light_lux
+    - sensor.back_door_lux
+
+    - sensor.multi1_light_temperature
+    - sensor.office_multi_temperature
+    - sensor.back_door_temperature
+    - sensor.thermostat_temperature_cloud
+    - sensor.bedroom_temperature
+
+    - vacuum.woodhouse
+
+    - sensor.speedtest_download
+    - sensor.speedtest_upload
+    - sensor.speedtest_ping
+    - sensor.m9plus_packets_s_received
+    - sensor.m9plus_packets_s_sent
+  domains:
+    - person
+    - sun

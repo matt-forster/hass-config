@@ -1,0 +1,2 @@
+- platform: google_translate
+  base_url: !secret local_ip

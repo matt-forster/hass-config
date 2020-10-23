@@ -1,0 +1,8 @@
+sleep_mode:
+  options:
+    - total # everyone is sleeping
+    - half # one person has said goodnight
+    - winddown # getting ready for bed
+    - "off" # everyone is awake
+  initial: "off"
+  icon: mdi:bed-king

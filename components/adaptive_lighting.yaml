@@ -1,0 +1,30 @@
+- name: living room
+  lights:
+    # - light.bulb_one # controlled by CL
+    - light.living_room_lamp
+  min_brightness: 20
+  min_color_temp: 3000
+  sleep_brightness: 10
+
+- name: office
+  lights:
+    - light.ebca99154a3841e2aatap1
+  min_brightness: 25
+  sleep_brightness: 13 # min for tuya controlled bulbs :shrug:
+
+- name: bedroom
+  # lights:
+  #   - light.bulb_two # controlled by CL
+  #   - light.bulb_three # controlled by CL
+  min_brightness: 20
+  interval: 30
+  sleep_brightness: 10
+
+- name: ensuite
+  lights:
+    - light.eb1cd346b4777e3fc65q68
+    - light.eb78b1d30c47f5da9ckgpg
+    - light.eba920b18a02a1b069c9c0
+  min_brightness: 50
+  interval: 10
+  sleep_brightness: 13

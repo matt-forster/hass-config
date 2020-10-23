@@ -1,0 +1,24 @@
+- name: Bedroom Circadian Lighting
+  platform: circadian_lighting
+  lights_xy:
+    - light.bulb_two
+    - light.bulb_three
+  min_brightness: 20
+  sleep_entity: switch.adaptive_lighting_sleep_mode_bedroom
+  sleep_state: 'on'
+  sleep_colortemp: 1000
+  sleep_brightness: 10
+  disable_entity: switch.adaptive_lighting_bedroom
+  disable_state: 'off'
+
+- name: Living Room Circadian Lighting
+  platform: circadian_lighting
+  lights_xy:
+    - light.bulb_one
+  min_brightness: 25
+  sleep_entity: switch.adaptive_lighting_sleep_mode_living_room
+  sleep_state: 'on'
+  sleep_colortemp: 1000
+  sleep_brightness: 10
+  disable_entity: switch.adaptive_lighting_living_room
+  disable_state: 'off'

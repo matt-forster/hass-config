@@ -1,0 +1,23 @@
+'1578031279634':
+  alias: Fade bedroom to off
+  sequence:
+    - data:
+        transition: 300
+      entity_id:
+      - light.bulb_three
+      - light.bulb_two
+      service: light.turn_off
+'1579061072504':
+  alias: Enable bedtime
+  sequence:
+    - data:
+        option: half
+      entity_id: input_select.sleep_mode
+      service: input_select.select_option
+'1579061101624':
+  alias: Disable bedtime
+  sequence:
+    - data:
+        option: off
+      entity_id: input_select.sleep_mode
+      service: input_select.select_option

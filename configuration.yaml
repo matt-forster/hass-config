@@ -1,0 +1,38 @@
+default_config:
+frontend:
+  themes: !include_dir_merge_named ./themes
+homeassistant:
+  customize: !include ./includes/customize.yaml
+http:
+  base_url: !secret base_url
+
+# integrations
+homekit:
+tts: !include ./integrations/tts.yaml
+tplink: !include ./integrations/tplink.yaml
+speedtestdotnet: !include ./integrations/speedtest.yaml
+vacuum: !include ./integrations/roomba.yaml
+abode: !include ./integrations/abode.yaml
+
+# includes
+automation: !include ./includes/automations.yaml
+binary_sensor: !include ./includes/binary_sensors.yaml
+device_tracker: !include ./includes/trackers.yaml
+group: !include ./includes/groups.yaml
+input_boolean: !include ./includes/input_booleans.yaml
+input_select: !include ./includes/input_selects.yaml
+light: !include ./includes/lights.yaml
+recorder: !include ./includes/recorder.yaml
+scene: !include ./includes/scenes.yaml
+script: !include ./includes/scripts.yaml
+switch: !include ./includes/switches.yaml
+zone: !include ./includes/zones.yaml
+
+# components
+circadian_lighting: !include ./components/circadian_lighting.yaml
+adaptive_lighting: !include ./components/adaptive_lighting.yaml
+
+logger:
+  default: warning
+  logs:
+    homeassistant.core: fatal

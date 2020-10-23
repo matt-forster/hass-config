@@ -1,0 +1,93 @@
+humans:
+  name: 'Humans'
+  entities:
+    - person.matt
+    - person.sean
+    - person.dominique
+
+# Binary Sensor Aggregate Groups
+# See ./includes/binary_sensors.yaml
+
+# Light Groups
+
+master_bedroom_lights:
+  name: 'Master Bedroom Lights'
+  entities:
+    - light.bulb_two
+    - light.bulb_three
+
+ensuite_lights:
+  name: 'Ensuite Lights'
+  entities:
+
+# master_bedroom_highlights:
+#   name: 'Master Bedroom Highlights'
+
+office_lights:
+  name: 'Office Lights'
+  entities:
+    - light.ebca99154a3841e2aatap1
+
+kitchen_lights:
+  name: 'Kitchen Lights'
+  entities:
+    - light.kitchen_pots
+
+kitchen_highlights:
+  name: 'Kitchen Highlights'
+  entities:
+    - light.edison
+
+living_room_lights:
+  name: 'Living Room Lights'
+  entities:
+   - light.bulb_one
+   - light.living_room_lamp
+
+living_room_highlights:
+  name: 'Living Room Highlights'
+  entities:
+    - light.tv_bias
+
+backyard_lights:
+  name: 'Backyard Lights'
+  entities:
+    - switch.back_porch_light
+
+# Aggregate Groups
+
+main_floor_highlights:
+  name: 'Highlight Lights'
+  entities:
+    - group.living_room_highlights
+    - group.kitchen_highlights
+
+main_floor_lights:
+  name: 'Main Floor Lights'
+  entities:
+    - group.kitchen_lights
+    - group.living_room_lights
+
+upstairs_lights:
+  name: 'Upstairs Lights'
+  entities:
+    - group.master_bedroom_lights
+    - group.office_lights
+
+outdoor_lights:
+  name: 'Outdoor Lights'
+  entities:
+    - group.backyard_lights
+
+all_highlights:
+  name: 'Highlight Lights'
+  entities:
+    - group.main_floor_highlights
+
+all_lights:
+  name: 'All Lights'
+  entities:
+    - group.main_floor_lights
+    - group.main_floor_highlights
+    - group.upstairs_lights
+    - group.outdoor_lights

@@ -1,0 +1,18 @@
+motion_enabled:
+  name: Motion Lights Enabled
+  icon: mdi:motion-sensor
+  initial: "on"
+cleaned_today:
+  name: Vacuum cleaned today
+  icon: mdi:broom
+guest_mode:
+  name: Guest mode
+  icon: mdi:human-male-female
+  initial: "off"
+automatic_temperature:
+  name: Automatic temperature
+  icon: mdi:thermometer
+movie_time:
+  name: Movie Scene
+  icon: mdi:movie-open
+  initial: "off"
