@@ -1,9 +1,9 @@
 purge_keep_days: 7
-purge_interval: 3
 include:
   entities:
     - alarm_control_panel.abode_alarm
     - sensor.last_boot
+    - climate.thermostat
 
     - sensor.office_multi_lux
     - sensor.multi1_light_lux

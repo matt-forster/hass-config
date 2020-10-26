@@ -29,10 +29,11 @@ switch: !include ./includes/switches.yaml
 zone: !include ./includes/zones.yaml
 
 # components
-circadian_lighting: !include ./components/circadian_lighting.yaml
+# circadian_lighting: !include ./components/circadian_lighting.yaml
 adaptive_lighting: !include ./components/adaptive_lighting.yaml
 
 logger:
   default: warning
   logs:
     homeassistant.core: fatal
+    # custom_components.adaptive_lighting: debug
