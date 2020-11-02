@@ -5,23 +5,23 @@ include:
     - sensor.last_boot
     - climate.thermostat
 
-    - sensor.office_multi_lux
-    - sensor.multi1_light_lux
-    - sensor.back_door_lux
+    # - sensor.office_multi_lux
+    # - sensor.multi1_light_lux
+    # - sensor.back_door_lux
 
-    - sensor.multi1_light_temperature
-    - sensor.office_multi_temperature
-    - sensor.back_door_temperature
-    - sensor.thermostat_temperature_cloud
-    - sensor.bedroom_temperature
+    # - sensor.multi1_light_temperature
+    # - sensor.office_multi_temperature
+    # - sensor.back_door_temperature
+    # - sensor.thermostat_temperature_cloud
+    # - sensor.bedroom_temperature
 
     - vacuum.woodhouse
 
-    - sensor.speedtest_download
-    - sensor.speedtest_upload
-    - sensor.speedtest_ping
-    - sensor.m9plus_packets_s_received
-    - sensor.m9plus_packets_s_sent
+    # - sensor.speedtest_download
+    # - sensor.speedtest_upload
+    # - sensor.speedtest_ping
+    # - sensor.m9plus_packets_s_received
+    # - sensor.m9plus_packets_s_sent
   domains:
     - person
     - sun

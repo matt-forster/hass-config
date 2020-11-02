@@ -1,8 +1,8 @@
 - name: living room
   lights:
     - light.bulb_one
-    - light.living_room_lamp
-  min_brightness: 20
+    # - light.living_room_lamp
+  min_brightness: 22
   sleep_brightness: 10
 
 - name: office
@@ -15,7 +15,8 @@
   lights:
     - light.bulb_two
     - light.bulb_three
-  min_brightness: 20
+  sunrise_offset: '00:15:00'
+  min_brightness: 22
   interval: 30
   sleep_brightness: 10
 
