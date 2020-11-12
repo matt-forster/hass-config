@@ -1,34 +1,34 @@
 - name: living room
+  min_brightness: 20
+  sleep_brightness: 13
   lights:
     - light.eba920b18a02a1b069c9c0 # seven
     # - light.living_room_lamp
-  sunset_offset: '00:45:00'
-  min_brightness: 20
-  sleep_brightness: 13
 
 - name: office
-  lights:
-    - light.ebca99154a3841e2aatap1 # five
-  sunset_offset: '02:00:00'
   min_brightness: 25
   sleep_brightness: 13 # min for tuya controlled bulbs :shrug:
+  lights:
+    - light.ebca99154a3841e2aatap1 # five
 
 - name: bedroom
+  interval: 30
+  min_brightness: 13
+  sleep_brightness: 13
+  sunrise_time: '7:00'
+  sunset_time: '23:00'
   lights:
     - light.eb1cd346b4777e3fc65q68 # nine
     - light.eb78b1d30c47f5da9ckgpg # eight
-  sunrise_offset: '00:15:00'
-  sunset_offset: '01:00:00'
-  min_brightness: 17
-  interval: 30
-  sleep_brightness: 13
 
 - name: ensuite
+  interval: 10
+  min_brightness: 40
+  sleep_brightness: 35
+  sunrise_time: '7:00'
+  sunset_offset: '01:00:00'
+  sunset_time: '23:00'
   lights:
     - light.bulb_one
     - light.bulb_two
     - light.bulb_three
-  sunset_offset: '01:00:00'
-  min_brightness: 40
-  interval: 10
-  sleep_brightness: 37
