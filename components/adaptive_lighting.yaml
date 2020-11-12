@@ -19,7 +19,7 @@
     - light.eb78b1d30c47f5da9ckgpg # eight
   sunrise_offset: '00:15:00'
   sunset_offset: '01:00:00'
-  min_brightness: 20
+  min_brightness: 17
   interval: 30
   sleep_brightness: 13
 
