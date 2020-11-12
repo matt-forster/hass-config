@@ -13,12 +13,16 @@ humans:
 master_bedroom_lights:
   name: 'Master Bedroom Lights'
   entities:
-    - light.bulb_two
-    - light.bulb_three
+    - light.eb1cd346b4777e3fc65q68 # nine
+    - light.eb78b1d30c47f5da9ckgpg # eight
+
 
 ensuite_lights:
   name: 'Ensuite Lights'
   entities:
+    - light.bulb_one
+    - light.bulb_two
+    - light.bulb_three
 
 # master_bedroom_highlights:
 #   name: 'Master Bedroom Highlights'
@@ -41,7 +45,7 @@ kitchen_highlights:
 living_room_lights:
   name: 'Living Room Lights'
   entities:
-   - light.bulb_one
+   - light.eba920b18a02a1b069c9c0 # seven
    - light.living_room_lamp
 
 living_room_highlights:
