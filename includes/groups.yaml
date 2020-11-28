@@ -2,7 +2,6 @@ humans:
   name: 'Humans'
   entities:
     - person.matt
-    - person.sean
     - person.dominique
 
 # Binary Sensor Aggregate Groups

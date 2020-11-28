@@ -1,0 +1,15 @@
+- filter:
+    include_domains:
+      - alarm_control_panel
+      - light
+    include_entity_globs:
+      - binary_sensor.*_door
+    include_entities:
+      - binary_sensor.living_room_motion
+      - binary_sensor.kitchen_motion
+      - binary_sensor.office_motion
+      - binary_sensor.bedroom_motion
+    exclude_entities:
+      - light.bulb_one
+      - light.bulb_two
+      - light.bulb_three

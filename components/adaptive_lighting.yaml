@@ -15,8 +15,6 @@
   interval: 30
   min_brightness: 13
   sleep_brightness: 13
-  sunrise_time: '7:00'
-  sunset_time: '23:00'
   lights:
     - light.eb1cd346b4777e3fc65q68 # nine
     - light.eb78b1d30c47f5da9ckgpg # eight
@@ -25,9 +23,6 @@
   interval: 10
   min_brightness: 40
   sleep_brightness: 35
-  sunrise_time: '7:00'
-  sunset_offset: '01:00:00'
-  sunset_time: '23:00'
   lights:
     - light.bulb_one
     - light.bulb_two

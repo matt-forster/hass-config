@@ -14,4 +14,3 @@
     track_new_devices: true
   hosts:
     matt_ipxi: !secret matts_phone_ip
-    sean_ipxi: !secret seans_phone_ip

@@ -7,7 +7,7 @@ http:
   base_url: !secret base_url
 
 # integrations
-homekit:
+homekit: !include ./integrations/homekit.yaml
 tts: !include ./integrations/tts.yaml
 tplink: !include ./integrations/tplink.yaml
 speedtestdotnet: !include ./integrations/speedtest.yaml
