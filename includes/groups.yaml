@@ -45,12 +45,12 @@ living_room_lights:
   name: 'Living Room Lights'
   entities:
    - light.eba920b18a02a1b069c9c0 # seven
-   - light.living_room_lamp
 
 living_room_highlights:
   name: 'Living Room Highlights'
   entities:
     - light.tv_bias
+    - light.living_room_lamp
 
 backyard_lights:
   name: 'Backyard Lights'
