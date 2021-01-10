@@ -14,3 +14,16 @@ device_tracker.tile_51c79d4e4a90413a:
   friendly_name: Tile - Spare Accord Keys
 device_tracker.tile_5aa19c82549f4d43:
   friendly_name: Tile Pro - Matt's Keys
+
+light.ebca99154a3841e2aatap1: # five
+  supported_features: 63
+light.eb1cd346b4777e3fc65q68: # nine
+  supported_features: 63
+light.eb78b1d30c47f5da9ckgpg: # eight
+  supported_features: 63
+light.eba920b18a02a1b069c9c0: # seven
+  supported_features: 63
+light.eb45426c1bc44df7b434xx: # four
+  supported_features: 63
+light.eb42f198d6c1e35466h6rf: # six
+  supported_features: 63

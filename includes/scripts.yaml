@@ -5,9 +5,8 @@
         option: 'half'
       entity_id: input_select.sleep_mode
       service: input_select.select_option
-    - data:
-        transition: 300
-      entity_id:
+    - delay: 5
+    - entity_id:
         - light.eb1cd346b4777e3fc65q68 # nine
         - light.eb78b1d30c47f5da9ckgpg # eight
       service: light.turn_off

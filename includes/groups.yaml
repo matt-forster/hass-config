@@ -15,7 +15,6 @@ master_bedroom_lights:
     - light.eb1cd346b4777e3fc65q68 # nine
     - light.eb78b1d30c47f5da9ckgpg # eight
 
-
 ensuite_lights:
   name: 'Ensuite Lights'
   entities:
@@ -29,7 +28,7 @@ ensuite_lights:
 office_lights:
   name: 'Office Lights'
   entities:
-    - light.ebca99154a3841e2aatap1
+    - light.ebca99154a3841e2aatap1 # five
 
 kitchen_lights:
   name: 'Kitchen Lights'
@@ -45,12 +44,13 @@ living_room_lights:
   name: 'Living Room Lights'
   entities:
    - light.eba920b18a02a1b069c9c0 # seven
+   - light.eb45426c1bc44df7b434xx # four
+   - light.eb42f198d6c1e35466h6rf # six
 
 living_room_highlights:
   name: 'Living Room Highlights'
   entities:
     - light.tv_bias
-    - light.living_room_lamp
 
 backyard_lights:
   name: 'Backyard Lights'
