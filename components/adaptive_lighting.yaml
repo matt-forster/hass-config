@@ -11,10 +11,11 @@
   sleep_brightness: 13 # min for tuya controlled bulbs :shrug:
   lights:
     - light.ebca99154a3841e2aatap1 # five
+    - light.led_strip_one
 
 - name: bedroom
   interval: 30
-  min_brightness: 13
+  min_brightness: 15
   sleep_brightness: 13
   lights:
     - light.eb1cd346b4777e3fc65q68 # nine
@@ -22,8 +23,8 @@
 
 - name: ensuite
   interval: 10
-  min_brightness: 40
-  sleep_brightness: 35
+  min_brightness: 30
+  sleep_brightness: 13
   lights:
     - light.bulb_one
     - light.bulb_two

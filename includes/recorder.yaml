@@ -3,17 +3,21 @@ include:
   entities:
     - alarm_control_panel.abode_alarm
     - sensor.last_boot
-    - climate.thermostat
 
     # - sensor.office_multi_lux
     # - sensor.multi1_light_lux
     # - sensor.back_door_lux
 
+    - climate.thermostat
+
     - sensor.multi1_light_temperature
     - sensor.office_multi_temperature
-    - sensor.back_door_temperature
     - sensor.bedroom_temperature
+    # - sensor.back_door_temperature
     # - sensor.thermostat_temperature_cloud
+
+    - sensor.multi1_light_humidity
+    - sensor.office_multi_humidity
 
     - vacuum.woodhouse
 

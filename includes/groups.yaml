@@ -29,6 +29,7 @@ office_lights:
   name: 'Office Lights'
   entities:
     - light.ebca99154a3841e2aatap1 # five
+    - light.led_strip_one
 
 kitchen_lights:
   name: 'Kitchen Lights'

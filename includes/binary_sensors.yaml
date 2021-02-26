@@ -56,3 +56,23 @@
       value_template: >
         {% set sensors = [states.binary_sensor.bedroom] %}
         {{ sensors | selectattr('state','eq','on') | list | count > 0 }}
+
+- platform: template
+  sensors:
+    main_floor_motion:
+      friendly_name: 'Main Floor Motion'
+      device_class: motion
+      value_template: >
+        {% set sensors = [states.binary_sensor.kitchen_auxillary_motion,
+                          states.binary_sensor.living_room_auxillary_motion] %}
+        {{ sensors | selectattr('state','eq','on') | list | count > 0 }}
+
+- platform: template
+  sensors:
+    upstairs_motion:
+      friendly_name: 'Upstairs Motion'
+      device_class: motion
+      value_template: >
+        {% set sensors = [states.binary_sensor.office_motion,
+                          states.binary_sensor.bedroom_motion] %}
+        {{ sensors | selectattr('state','eq','on') | list | count > 0 }}

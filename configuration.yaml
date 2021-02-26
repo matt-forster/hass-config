@@ -11,7 +11,6 @@ homekit: !include ./integrations/homekit.yaml
 tts: !include ./integrations/tts.yaml
 tplink: !include ./integrations/tplink.yaml
 speedtestdotnet: !include ./integrations/speedtest.yaml
-vacuum: !include ./integrations/roomba.yaml
 abode: !include ./integrations/abode.yaml
 
 # includes
