@@ -23,6 +23,7 @@ include:
 
     - sensor.speedtest_download
     - sensor.speedtest_upload
+    - sensor.fast_com_download
     # - sensor.speedtest_ping
     # - sensor.m9plus_packets_s_received
     # - sensor.m9plus_packets_s_sent

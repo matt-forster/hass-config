@@ -12,6 +12,7 @@ tts: !include ./integrations/tts.yaml
 tplink: !include ./integrations/tplink.yaml
 speedtestdotnet: !include ./integrations/speedtest.yaml
 abode: !include ./integrations/abode.yaml
+fastdotcom: !include ./integrations/fast.yaml
 
 # includes
 automation: !include ./includes/automations.yaml
