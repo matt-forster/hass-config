@@ -16,6 +16,7 @@ fastdotcom: !include ./integrations/fast.yaml
 
 # includes
 automation: !include ./includes/automations.yaml
+sensor: !include ./includes/sensors.yaml
 binary_sensor: !include ./includes/binary_sensors.yaml
 device_tracker: !include ./includes/trackers.yaml
 group: !include ./includes/groups.yaml

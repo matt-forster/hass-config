@@ -1,4 +1,4 @@
-purge_keep_days: 7
+purge_keep_days: 14
 include:
   entities:
     - alarm_control_panel.abode_alarm
@@ -9,12 +9,13 @@ include:
     # - sensor.back_door_lux
 
     - climate.thermostat
+    - sensor.thermostat_state
 
     - sensor.multi1_light_temperature
     - sensor.office_multi_temperature
     - sensor.bedroom_temperature
+    - sensor.thermostat_temperature_cloud
     # - sensor.back_door_temperature
-    # - sensor.thermostat_temperature_cloud
 
     - sensor.multi1_light_humidity
     - sensor.office_multi_humidity
@@ -27,6 +28,10 @@ include:
     # - sensor.speedtest_ping
     # - sensor.m9plus_packets_s_received
     # - sensor.m9plus_packets_s_sent
+
+    - sensor.front_yard_sprinkler_minutes
+    - sensor.back_yard_sprinkler_minutes
+
   domains:
     - person
     - sun
