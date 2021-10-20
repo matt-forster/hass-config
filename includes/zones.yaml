@@ -1,9 +1,3 @@
-- name: Autovance
-  latitude: !secret work_lat
-  longitude: !secret work_long
-  icon: mdi:briefcase
-  radius: 300
-
 - name: Home
   latitude: !secret home_lat
   longitude: !secret home_long

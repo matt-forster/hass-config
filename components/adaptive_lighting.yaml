@@ -2,15 +2,15 @@
   min_brightness: 15
   sleep_brightness: 13
   lights:
-   - light.eba920b18a02a1b069c9c0 # seven
-   - light.eb45426c1bc44df7b434xx # four
-   - light.eb42f198d6c1e35466h6rf # six
+   - light.bulb_seven
+   - light.bulb_four
+   - light.bulb_six
 
 - name: office
   min_brightness: 15
   sleep_brightness: 13 # min for tuya controlled bulbs :shrug:
   lights:
-    - light.ebca99154a3841e2aatap1 # five
+    - light.bulb_five
     - light.led_strip_one
 
 - name: bedroom
@@ -18,8 +18,8 @@
   min_brightness: 15
   sleep_brightness: 13
   lights:
-    - light.eb1cd346b4777e3fc65q68 # nine
-    - light.eb78b1d30c47f5da9ckgpg # eight
+    - light.bulb_nine
+    - light.bulb_eight
 
 - name: ensuite
   interval: 10
