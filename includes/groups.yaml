@@ -29,7 +29,7 @@ office_lights:
   name: 'Office Lights'
   entities:
     - light.bulb_five
-    - light.led_strip_one
+    - light.desk_bias
 
 kitchen_lights:
   name: 'Kitchen Lights'

@@ -1,16 +1,12 @@
-- platform: nmap_tracker
-  hosts: !secret doms_phone_ip
-  consider_home: 600
-  interval_seconds: 20
-  home_interval: 10
+# - platform: nmap_tracker
+#   hosts: !secret doms_phone_ip
+#   consider_home: 600
+#   interval_seconds: 20
+#   home_interval: 10
 
-- platform: tile
-  username: !secret tile_username
-  password: !secret tile_password
-
-- platform: iphonedetect
-  consider_home: 60
-  new_device_defaults:
-    track_new_devices: true
-  hosts:
-    matt_ipxi: !secret matts_phone_ip
+# - platform: iphonedetect
+#   consider_home: 60
+#   new_device_defaults:
+#     track_new_devices: true
+#   hosts:
+#     matt_ipxi: !secret matts_phone_ip

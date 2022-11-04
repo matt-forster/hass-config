@@ -1,121 +1,121 @@
-- platform: template
-  sensors:
-    back_yard_sprinkler_minutes:
-      friendly_name: "Back Yard Sprinkler Minutes"
-      unit_of_measurement: 'min'
-      value_template: "{{ state_attr('sensor.back_yard_daily_adjusted_run_time', 'adjusted_run_time_minutes') }}"
+# - platform: template
+#   sensors:
+#     back_yard_sprinkler_minutes:
+#       friendly_name: "Back Yard Sprinkler Minutes"
+#       unit_of_measurement: 'min'
+#       value_template: "{{ state_attr('sensor.back_yard_daily_adjusted_run_time', 'adjusted_run_time_minutes') }}"
 
-- platform: template
-  sensors:
-    front_yard_sprinkler_minutes:
-      friendly_name: "Front Yard Sprinkler Minutes"
-      unit_of_measurement: 'min'
-      value_template: "{{ state_attr('sensor.front_yard_daily_adjusted_run_time', 'adjusted_run_time_minutes') }}"
+# - platform: template
+#   sensors:
+#     front_yard_sprinkler_minutes:
+#       friendly_name: "Front Yard Sprinkler Minutes"
+#       unit_of_measurement: 'min'
+#       value_template: "{{ state_attr('sensor.front_yard_daily_adjusted_run_time', 'adjusted_run_time_minutes') }}"
 
-- platform: template
-  sensors:
-    thermostat_state:
-      friendly_name: "Thermostat State"
-      unit_of_measurement: ''
-      value_template: "{{ state_attr('climate.thermostat_cloud', 'hvac_action') }}"
+# - platform: template
+#   sensors:
+#     thermostat_state:
+#       friendly_name: "Thermostat State"
+#       unit_of_measurement: ''
+#       value_template: "{{ state_attr('climate.thermostat_cloud', 'hvac_action') }}"
 
-- platform: template
-  sensors:
-    ac_runtime_today:
-      friendly_name: "AC Runtime Today"
-      unit_of_measurement: 'h'
-      value_template: "{{ (states.sensor.hvac_runtime_today_cool.state) | float }}"
-      attribute_templates:
-        value: "{{ (60 * (states.sensor.hvac_runtime_today_cool.state)) | int }}m"
+# - platform: template
+#   sensors:
+#     ac_runtime_today:
+#       friendly_name: "AC Runtime Today"
+#       unit_of_measurement: 'h'
+#       value_template: "{{ (states.sensor.hvac_runtime_today_cool.state) | float }}"
+#       attribute_templates:
+#         value: "{{ (60 * (states.sensor.hvac_runtime_today_cool.state)) | int }}m"
 
-    ac_runtime_yesterday:
-      friendly_name: "AC Runtime Yesterday"
-      unit_of_measurement: 'h'
-      value_template: "{{ (states.sensor.hvac_runtime_yesterday_cool.state) | float }}"
-      attribute_templates:
-        value: "{{ (60 * (states.sensor.hvac_runtime_yesterday_cool.state)) | int }}m"
+#     ac_runtime_yesterday:
+#       friendly_name: "AC Runtime Yesterday"
+#       unit_of_measurement: 'h'
+#       value_template: "{{ (states.sensor.hvac_runtime_yesterday_cool.state) | float }}"
+#       attribute_templates:
+#         value: "{{ (60 * (states.sensor.hvac_runtime_yesterday_cool.state)) | int }}m"
 
-    ac_runtime_weekly:
-      friendly_name: "AC Runtime Weekly"
-      unit_of_measurement: 'h'
-      value_template: "{{ (states.sensor.hvac_runtime_weekly_cool.state) | float }}"
-      attribute_templates:
-        value: "{{ (60 * (states.sensor.hvac_runtime_weekly_cool.state)) | int }}m"
+#     ac_runtime_weekly:
+#       friendly_name: "AC Runtime Weekly"
+#       unit_of_measurement: 'h'
+#       value_template: "{{ (states.sensor.hvac_runtime_weekly_cool.state) | float }}"
+#       attribute_templates:
+#         value: "{{ (60 * (states.sensor.hvac_runtime_weekly_cool.state)) | int }}m"
 
-- platform: template
-  sensors:
+# - platform: template
+#   sensors:
 
-    heat_runtime_today:
-      friendly_name: "Heat Runtime Today"
-      unit_of_measurement: 'h'
-      value_template: "{{ (states.sensor.hvac_runtime_today_heat.state) | float }}"
-      attribute_templates:
-        value: "{{ (60 * (states.sensor.hvac_runtime_today_heat.state)) | int }}m"
+#     heat_runtime_today:
+#       friendly_name: "Heat Runtime Today"
+#       unit_of_measurement: 'h'
+#       value_template: "{{ (states.sensor.hvac_runtime_today_heat.state) | float }}"
+#       attribute_templates:
+#         value: "{{ (60 * (states.sensor.hvac_runtime_today_heat.state)) | int }}m"
 
-    heat_runtime_yesterday:
-      friendly_name: "Heat Runtime Yesterday"
-      unit_of_measurement: 'h'
-      value_template: "{{ (states.sensor.hvac_runtime_yesterday_heat.state) | float }}"
-      attribute_templates:
-        value: "{{ (60 * (states.sensor.hvac_runtime_yesterday_heat.state)) | int }}m"
+#     heat_runtime_yesterday:
+#       friendly_name: "Heat Runtime Yesterday"
+#       unit_of_measurement: 'h'
+#       value_template: "{{ (states.sensor.hvac_runtime_yesterday_heat.state) | float }}"
+#       attribute_templates:
+#         value: "{{ (60 * (states.sensor.hvac_runtime_yesterday_heat.state)) | int }}m"
 
-    heat_runtime_weekly:
-      friendly_name: "Heat Runtime Weekly"
-      unit_of_measurement: 'h'
-      value_template: "{{ (states.sensor.hvac_runtime_weekly_heat.state) | float }}"
-      attribute_templates:
-        value: "{{ (60 * (states.sensor.hvac_runtime_weekly_heat.state)) | int }}m"
+#     heat_runtime_weekly:
+#       friendly_name: "Heat Runtime Weekly"
+#       unit_of_measurement: 'h'
+#       value_template: "{{ (states.sensor.hvac_runtime_weekly_heat.state) | float }}"
+#       attribute_templates:
+#         value: "{{ (60 * (states.sensor.hvac_runtime_weekly_heat.state)) | int }}m"
 
-- platform: history_stats
-  name: hvac_runtime_today_cool
-  entity_id: sensor.thermostat_state
-  state: 'cool'
-  type: time
-  end: '{{ now() }}'
-  duration:
-    hours: 24
+# - platform: history_stats
+#   name: hvac_runtime_today_cool
+#   entity_id: sensor.thermostat_state
+#   state: 'cool'
+#   type: time
+#   end: '{{ now() }}'
+#   duration:
+#     hours: 24
 
-- platform: history_stats
-  name: hvac_runtime_today_heat
-  entity_id: sensor.thermostat_state
-  state: 'heat'
-  type: time
-  end: '{{ now() }}'
-  duration:
-    hours: 24
+# - platform: history_stats
+#   name: hvac_runtime_today_heat
+#   entity_id: sensor.thermostat_state
+#   state: 'heat'
+#   type: time
+#   end: '{{ now() }}'
+#   duration:
+#     hours: 24
 
-- platform: history_stats
-  name: hvac_runtime_yesterday_cool
-  entity_id: sensor.thermostat_state
-  state: 'cool'
-  type: time
-  end: '{{ now().replace(hour=0).replace(minute=0).replace(second=0) }}'
-  duration:
-    hours: 24
+# - platform: history_stats
+#   name: hvac_runtime_yesterday_cool
+#   entity_id: sensor.thermostat_state
+#   state: 'cool'
+#   type: time
+#   end: '{{ now().replace(hour=0).replace(minute=0).replace(second=0) }}'
+#   duration:
+#     hours: 24
 
-- platform: history_stats
-  name: hvac_runtime_yesterday_heat
-  entity_id: sensor.thermostat_state
-  state: 'heat'
-  type: time
-  end: '{{ now().replace(hour=0).replace(minute=0).replace(second=0) }}'
-  duration:
-    hours: 24
+# - platform: history_stats
+#   name: hvac_runtime_yesterday_heat
+#   entity_id: sensor.thermostat_state
+#   state: 'heat'
+#   type: time
+#   end: '{{ now().replace(hour=0).replace(minute=0).replace(second=0) }}'
+#   duration:
+#     hours: 24
 
-- platform: history_stats
-  name: hvac_runtime_weekly_cool
-  entity_id: sensor.thermostat_state
-  state: 'cool'
-  type: time
-  end: '{{ now() }}'
-  duration:
-    hours: 168
+# - platform: history_stats
+#   name: hvac_runtime_weekly_cool
+#   entity_id: sensor.thermostat_state
+#   state: 'cool'
+#   type: time
+#   end: '{{ now() }}'
+#   duration:
+#     hours: 168
 
-- platform: history_stats
-  name: hvac_runtime_weekly_heat
-  entity_id: sensor.thermostat_state
-  state: 'heat'
-  type: time
-  end: '{{ now() }}'
-  duration:
-    hours: 168
+# - platform: history_stats
+#   name: hvac_runtime_weekly_heat
+#   entity_id: sensor.thermostat_state
+#   state: 'heat'
+#   type: time
+#   end: '{{ now() }}'
+#   duration:
+#     hours: 168

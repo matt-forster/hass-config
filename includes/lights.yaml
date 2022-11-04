@@ -12,14 +12,14 @@
         entity_id: switch.plug_two_relay
     edison:
       friendly_name: "Edison"
-      level_template: "{{ 100 if is_state('switch.plug_one_relay_switch', 'on') else 0 }}"
-      value_template: "{{ is_state('switch.plug_one_relay_switch', 'on') }}"
+      level_template: "{{ 100 if is_state('switch.plug_one_relay', 'on') else 0 }}"
+      value_template: "{{ is_state('switch.plug_one_relay', 'on') }}"
       turn_on:
         service: switch.turn_on
-        entity_id: switch.plug_one_relay_switch
+        entity_id: switch.plug_one_relay
       turn_off:
         service: switch.turn_off
-        entity_id: switch.plug_one_relay_switch
+        entity_id: switch.plug_one_relay
 
 - platform: switch
   name: Kitchen Pots

@@ -76,6 +76,3 @@
         {% set sensors = [states.binary_sensor.office_motion,
                           states.binary_sensor.bedroom_motion] %}
         {{ sensors | selectattr('state','eq','on') | list | count > 0 }}
-
-- platform: car_wash
-  weather: weather.thermostat_cloud

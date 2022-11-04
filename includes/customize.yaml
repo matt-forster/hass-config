@@ -1,14 +1,6 @@
-person.matt:
-  entity_picture: /local/matt-icon.jpg
-person.dominique:
-  entity_picture: /local/dom.jpg
-device_tracker.tile_p_bd62d773ca4a68f7caf8dbc4694caeb2:
-  friendly_name: Tile - Matt's Phone
+# person.matt:
+#   entity_picture: /local/matt-icon.jpg
+# person.dominique:
+#   entity_picture: /local/dom.jpg
 device_tracker.c4_98_80_b3_cb_84:
   friendly_name: NMAP - Matt's Phone
-device_tracker.f8_4e_73_d2_ae_b4:
-  friendly_name: NMAP - Sean's Phone
-device_tracker.tile_51c79d4e4a90413a:
-  friendly_name: Tile - Spare Accord Keys
-device_tracker.tile_5aa19c82549f4d43:
-  friendly_name: Tile Pro - Matt's Keys
